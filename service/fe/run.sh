@@ -5,4 +5,4 @@ docker run -d \
     --hostname fe \
     --network product_workspace \
     -p 3001:3001 \
-fe
+devlogex/fe
