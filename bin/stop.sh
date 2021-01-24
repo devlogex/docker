@@ -1,8 +1,7 @@
 #!/bin/bash
 PATH_PROJECTS=/home/devlogex/Projects
 
-docker network create product_workspace
-
+docker network rm product_workspace
 
 docker container stop pw_redis
 docker container stop postgres
@@ -23,16 +22,3 @@ docker container rm devservice
 docker container rm actionservice
 docker container rm reportservice
 docker container rm fe
-
-cd $PATH_PROJECTS/docker/env
-sh redis/run.sh
-sh postgres/run.sh
-
-cd $PATH_PROJECTS/docker/service
-sh dbservice/run.sh
-sh configservice/run.sh
-sh strategyservice/run.sh
-sh devservice/run.sh
-sh actionservice/run.sh
-sh reportservice/run.sh
-sh fe/run.sh
