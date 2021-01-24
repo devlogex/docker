@@ -1,4 +1,4 @@
-docker network create product_workspace
+#!/bin/bash
 
 docker run --publish 5432:5432 \
     --name postgres \
