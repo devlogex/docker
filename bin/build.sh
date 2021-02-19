@@ -1,6 +1,6 @@
 #!/bin/bash
-PATH_PROJECTS=/home/devlogex/Projects
-MAVEN_PATH=/home/devlogex/.m2
+PATH_PROJECTS=/home/$USER/Projects
+MAVEN_PATH=/home/$USER/.m2
 
 if [ $# -gt 0 ]
 then

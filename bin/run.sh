@@ -1,5 +1,5 @@
 #!/bin/bash
-PATH_PROJECTS=/home/devlogex/Projects
+PATH_PROJECTS=/home/$USER/Projects
 
 if [ $# -gt 0 ]
 then
