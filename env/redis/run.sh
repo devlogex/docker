@@ -5,4 +5,4 @@ docker run -d \
     --hostname pw_redis \
     --network product_workspace \
     -p 6379:6379 \
-pw_redis
+devlogex/pw_redis
